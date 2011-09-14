@@ -288,17 +288,22 @@ public class Satellite
     }
    
 
- /**      
-* Check if the initial data points are valid and not already on earth     
-* @param x     
-* @param y     
-* @return true if satellite not on earth     
-*         false if satellite on earth     
-*/    
-public boolean isValid(double x, double y){        
-	if (Math.pow(x,2) + Math.pow(y, 2) > Math.pow(r, 2)){
-            return true;
-        }
-        else return false;
-  }
+   /**      
+    * Check if the initial data points are valid and not already on earth     
+    * @param x     
+    * @param y     
+    * @return true if satellite not on earth     
+    *         false if satellite on earth     
+    */    
+    public boolean isValid(double x, double y)
+    {        
+            if (Math.pow(x,2) + Math.pow(y, 2) > Math.pow(r, 2))
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+    }
 }
